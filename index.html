@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 第二屆武士盃全國羽球錦標賽 — 榮譽榜</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1B1A17;--navy:#17263F;--navy2:#22385C;--paper:#E8E1D1;--paper2:#F2EDE1;
+ --line:#DCD3BE;--seal:#B4362A;--muted:#7A705F;
+ --g1:#A8842C;--g2:#8C8C94;--g3:#9A6A42;
+ --gut:clamp(26px,4.5vw,56px);}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:"Noto Sans TC",-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
+ color:var(--ink);background:radial-gradient(130% 80% at 15% 0%,#F4F0E5 0%,var(--paper) 52%,#DBD2BE 100%);
+ -webkit-font-smoothing:antialiased;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.45;z-index:0;
+ background-image:repeating-linear-gradient(94deg,rgba(120,105,80,.05) 0 1px,transparent 1px 4px)}
+.serif{font-family:"Noto Serif TC","Yu Mincho",serif}
+.wrap{position:relative;z-index:1;max-width:1240px;margin:0 auto;padding:0 var(--gut) 90px}
+
+header{background:#000;margin:0;padding:48px 0 38px;position:relative;overflow:hidden}
+header::after{content:"譽";position:absolute;right:calc(var(--gut) - 8px);top:-26px;font-family:"Noto Serif TC",serif;
+ font-size:200px;font-weight:900;color:rgba(255,255,255,.05);line-height:1}
+.hd{max-width:1240px;margin:0 auto;padding:0 var(--gut);position:relative}
+.hd .pre{color:#9A9A9A;font-size:12.5px;letter-spacing:.3em;margin-bottom:11px}
+.hd h1{font-family:"Noto Serif TC",serif;font-weight:900;margin:0;white-space:nowrap;
+ font-size:clamp(17px,5.4vw,52px);letter-spacing:.05em;line-height:1.3;
+ color:#C9CDD2;
+ background:linear-gradient(180deg,#F2F4F6 0%,#C6CBD1 42%,#8E949B 62%,#DCE0E4 100%);
+ -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+@supports not (background-clip:text){.hd h1{-webkit-text-fill-color:#C9CDD2}}
+.hd .sub{color:#9A9A9A;font-size:12.5px;margin-top:12px;letter-spacing:.06em;line-height:1.9}
+.hd .sub b{color:#D8DCE0;font-weight:500}
+
+.tools{position:sticky;top:0;z-index:5;background:rgba(242,237,225,.94);backdrop-filter:blur(8px);
+ border-bottom:1px solid var(--line);margin:0 0 26px;padding:12px 0}
+.tools .in{max-width:1240px;margin:0 auto;padding:0 var(--gut);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+#q{flex:1;min-width:210px;max-width:340px;padding:9px 13px;border:1px solid var(--line);border-radius:3px;
+ background:#FFFDF7;font-family:inherit;font-size:14px}
+#q::placeholder{color:#B3A891}
+select{padding:9px 11px;border:1px solid var(--line);border-radius:3px;background:#FFFDF7;
+ font-family:inherit;font-size:14px;color:var(--ink);max-width:220px}
+.tools .cnt{margin-left:auto;font-size:12px;color:var(--muted)}
+.btn{border:1px solid var(--ink);background:transparent;color:var(--ink);padding:8px 14px;
+ border-radius:2px;font-size:13px;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--ink);color:var(--paper2)}
+
+.hits{margin:0 0 26px;border:1px solid var(--line);background:rgba(255,253,247,.75);border-radius:4px;padding:14px 16px}
+.hits h4{margin:0 0 10px;font-size:11.5px;letter-spacing:.24em;color:var(--muted)}
+.hit{display:flex;gap:10px;align-items:baseline;padding:7px 0;border-top:1px dashed var(--line);font-size:14px;flex-wrap:wrap}
+.hit:first-of-type{border-top:0}
+.hit .who{font-weight:700}
+.hit .where{color:var(--muted);font-size:12.5px}
+.hit .go{margin-left:auto;background:var(--navy);color:#F2EDE1;border:0;padding:4px 10px;border-radius:2px;
+ font-size:12px;cursor:pointer;font-family:inherit}
+
+section{margin-top:44px;scroll-margin-top:76px}
+.sechd{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:11px}
+.sechd .eyebrow{font-size:11.5px;letter-spacing:.3em;color:var(--muted)}
+.sechd h2{font-family:"Noto Serif TC",serif;font-size:clamp(22px,3.2vw,30px);margin:3px 0 0;
+ letter-spacing:.07em;font-weight:900}
+.sechd .meta{margin-left:auto;font-size:12px;color:var(--muted);text-align:right;line-height:1.7}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(318px,1fr));gap:18px;margin-top:20px;align-items:start}
+.card{background:linear-gradient(178deg,#FFFDF7,#F6F0E1);border:1px solid #C8BB9E;border-radius:3px;
+ clip-path:polygon(0 13px,13px 0,calc(100% - 13px) 0,100% 13px,100% 100%,0 100%);
+ padding:14px 15px 13px;box-shadow:0 2px 8px rgba(60,45,20,.07)}
+.card.hl{border-color:var(--seal);box-shadow:0 0 0 2px rgba(180,54,42,.28),0 2px 8px rgba(60,45,20,.1)}
+.card .ch{border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:4px}
+.card .ci{font-family:"Noto Serif TC",serif;font-size:19px;font-weight:900;line-height:1.25;letter-spacing:.04em}
+.card .cd{font-size:11px;letter-spacing:.14em;color:var(--muted);margin-bottom:2px}
+
+.wn{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px dashed var(--line)}
+.wn:first-of-type{border-top:0}
+.md{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;margin-top:1px;
+ font-family:"Noto Serif TC",serif;font-size:12.5px;font-weight:900;color:#FFF8EC}
+.md.m1{background:linear-gradient(160deg,#C9A440,#9A7A22)}
+.md.m2{background:linear-gradient(160deg,#A9AAB2,#7E7F88)}
+.md.m3{background:linear-gradient(160deg,#B4794C,#8A5833)}
+.md.m4{background:#6E6557}
+.md.m5{background:#FFFDF7;border:1.5px dashed #BDB19A;color:#8A7F6C;font-size:10px}
+.wt{min-width:0;flex:1}
+.wnm{font-size:14.5px;font-weight:700;line-height:1.45;word-break:break-word}
+.wnm.sm{font-size:13px;font-weight:500;line-height:1.55}
+.wu{font-size:11.5px;color:#4A5F82;line-height:1.5;margin-top:2px}
+.wu.none{color:#B3A891}
+.wa{font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:1px}
+
+.notice{border:2px solid var(--seal);background:#FBF2EF;border-radius:4px;padding:18px 20px;margin-bottom:26px}
+.notice h3{font-family:"Noto Serif TC",serif;font-size:19px;margin:0 0 10px;color:var(--seal);letter-spacing:.1em}
+.notice p{margin:0 0 9px;font-size:14.5px;line-height:1.95}
+.notice p:last-child{margin-bottom:0}
+.fnote{margin-top:12px;background:#EDF1F7;border-left:3px solid var(--navy2);padding:10px 14px;
+ font-size:13px;line-height:1.85;color:#2C4A63;border-radius:0 3px 3px 0}
+.fnote .ftag{display:inline-block;background:var(--navy);color:var(--paper2);font-size:10.5px;
+ padding:1px 7px;border-radius:2px;margin-right:8px;letter-spacing:.1em;vertical-align:1px}
+.fnote.plain{background:#F3F0E7;border-left-color:#B9AB8D;color:var(--muted)}
+
+.podium{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0 24px}
+.podium.two{grid-template-columns:repeat(2,1fr);max-width:820px;margin-left:auto;margin-right:auto}
+.podium.two .sch{font-size:19px}
+.podium.two .pts{font-size:44px}
+.notice .em{font-weight:700;color:var(--seal)}
+.pd{background:linear-gradient(178deg,#FFFDF7,#F6F0E1);border:1px solid #C8BB9E;border-radius:3px;
+ clip-path:polygon(0 13px,13px 0,calc(100% - 13px) 0,100% 13px,100% 100%,0 100%);
+ padding:16px 15px 14px;text-align:center;box-shadow:0 2px 8px rgba(60,45,20,.07)}
+.pd .rk{font-family:"Noto Serif TC",serif;font-size:13px;font-weight:900;letter-spacing:.2em;color:#FFF8EC;
+ display:inline-block;padding:3px 13px;border-radius:2px}
+.pd1 .rk{background:linear-gradient(160deg,#C9A440,#9A7A22)}
+.pd2 .rk{background:linear-gradient(160deg,#A9AAB2,#7E7F88)}
+.pd3 .rk{background:linear-gradient(160deg,#B4794C,#8A5833)}
+.pd .sch{font-family:"Noto Serif TC",serif;font-size:16.5px;font-weight:900;margin:11px 0 8px;line-height:1.45}
+.pd .pts{font-family:"Noto Serif TC",serif;font-size:36px;font-weight:900;line-height:1;color:var(--navy)}
+.pd .ptl{font-size:10.5px;letter-spacing:.22em;color:var(--muted);margin-top:4px}
+.pd .brk{font-size:11.5px;color:var(--muted);margin-top:9px;border-top:1px dashed var(--line);padding-top:8px;line-height:1.7}
+
+.tbl{overflow-x:auto;margin-top:18px;border:1px solid var(--line);border-radius:3px;background:rgba(255,253,247,.8)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:660px}
+th{background:#1B1A17;color:#E8E1D1;font-weight:500;font-size:11.5px;letter-spacing:.12em;
+ padding:10px 12px;text-align:right;white-space:nowrap}
+th:nth-child(1),th:nth-child(2){text-align:left}
+td{padding:10px 12px;border-top:1px solid var(--line);text-align:right;white-space:nowrap}
+td:nth-child(1){color:var(--muted);font-family:"Noto Serif TC",serif;width:40px}
+td:nth-child(2){text-align:left;font-weight:500;white-space:normal}
+tr:nth-child(even) td{background:rgba(220,211,190,.18)}
+td.tp{font-family:"Noto Serif TC",serif;font-size:17px;font-weight:900;color:var(--navy)}
+td.z{color:#C6BCA6}
+tr.win td{background:#FBF4E4!important;font-weight:700}
+tr.win td.z{font-weight:400}
+.wtag{display:inline-block;background:#9A7A22;color:#FFF8EC;font-size:10px;padding:1px 7px;
+ border-radius:2px;margin-left:8px;letter-spacing:.08em;vertical-align:1px;font-weight:500}
+.tblh{font-family:"Noto Serif TC",serif;font-size:17px;margin:30px 0 4px;letter-spacing:.1em}
+.tblnote{font-size:12.5px;color:var(--muted);line-height:1.7}
+
+.rules{margin-top:26px;background:rgba(255,253,247,.7);border:1px solid var(--line);border-radius:4px;padding:18px 20px}
+.rules h3{font-family:"Noto Serif TC",serif;font-size:17px;margin:0 0 12px;letter-spacing:.1em}
+.rules ol{margin:0;padding-left:20px}
+.rules li{font-size:14px;line-height:1.95;margin-bottom:8px}
+.rules .eg{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.pill{display:inline-block;background:var(--navy);color:var(--paper2);font-size:11px;padding:1px 8px;
+ border-radius:2px;margin-right:6px;letter-spacing:.06em}
+.pill.p1{background:#9A7A22}.pill.p2{background:#7E7F88}.pill.p3{background:#8A5833}.pill.p4{background:#6E6557}
+
+footer{margin-top:60px;border-top:1px solid var(--line);padding-top:16px;font-size:11.5px;color:var(--muted);line-height:1.9}
+@media (max-width:760px){.podium{grid-template-columns:1fr}}
+@media (max-width:640px){.grid{grid-template-columns:1fr}.tools .cnt{display:none}}
+@media print{
+ .tools,.hits{display:none!important}
+ body{background:#fff}header{background:#fff;color:#000;border-bottom:2px solid #000}
+ .hd .pre,.hd .sub{color:#000}
+ .hd h1{color:#000;background:none;-webkit-text-fill-color:#000}
+ header::after{display:none}
+ section{break-inside:avoid}.card,.pd{break-inside:avoid;box-shadow:none}
+ .grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<header><div class="hd">
+  <div class="pre">2026 第二屆</div>
+  <h1 class="serif">武士盃全國羽球錦標賽榮譽榜</h1>
+  <div class="sub" id="hdsub"></div>
+</div></header>
+
+<div class="tools"><div class="in">
+  <select id="view" aria-label="選擇檢視頁面">
+    <option value="honor">榮譽榜</option>
+    <option value="spirit">精神總錦標</option>
+  </select>
+  <input id="q" placeholder="輸入選手姓名或團體名稱查詢得獎紀錄" autocomplete="off">
+  <select id="fdiv"><option value="">全部組別</option></select>
+  <button class="btn" onclick="window.print()">列印／存成 PDF</button>
+  <span class="cnt" id="cnt"></span>
+</div></div>
+
+<div class="wrap">
+  <div id="hits"></div>
+  <div id="body"></div>
+  <footer id="foot"></footer>
+</div>
+
+<script id="awards" type="application/json">[{"div":"國小中年級（含）以下","item":"男單","w":[{"nm":"余晏樂","u":"新北麗林國小","aw":"冠軍"},{"nm":"石祐任","u":"高飛羽訓","aw":"亞軍"},{"nm":"林郁展","u":"新北麗林國小","aw":"並列季軍"},{"nm":"歐陽元順","u":"興隆國小","aw":"並列季軍"},{"nm":"黃樂林","u":"新北昌平國小/假組軍團","aw":"第 5～8 名"},{"nm":"劉允翰","u":"桃市錦興","aw":"第 5～8 名"},{"nm":"張語晉","u":"新北昌平國小/假組軍團","aw":"第 5～8 名"},{"nm":"吳宇恆","u":"新北昌平國小/假組軍團","aw":"第 5～8 名"}]},{"div":"國小中年級（含）以下","item":"女單","w":[{"nm":"黃俞菲","u":"板橋國小","aw":"冠軍"},{"nm":"胡馨予","u":"東興國小","aw":"亞軍"},{"nm":"葉依沛","u":"竹縣東興國小","aw":"並列季軍"},{"nm":"陳品瑜","u":"楊梅國小","aw":"並列季軍"}]},{"div":"國小中年級（含）以下","item":"男雙","w":[{"nm":"張恩哲 / 張語恆","u":"華成體育","aw":"冠軍"},{"nm":"石祐任 / 楊竣宇","u":"高飛羽訓","aw":"亞軍"},{"nm":"劉允翰 / 陳又愷","u":"桃市有得/桃市錦興","aw":"並列季軍"},{"nm":"張語晉 / 黃樂林","u":"新北昌平國小/假組軍團","aw":"並列季軍"}]},{"div":"國小中年級（含）以下","item":"女雙","w":[{"nm":"曾李品希 / 魏岑凊","u":"文德國民小學","aw":"冠軍"},{"nm":"林耘朶 / 蕭彤樺","u":"新北鷺江","aw":"亞軍"},{"nm":"鄭羽彤 / 蔡岑昀","u":"台北市民生國小","aw":"並列季軍"},{"nm":"呂璟慧 / 林芊妘","u":"新北昌平國小/假組軍團","aw":"並列季軍"}]},{"div":"國小高年級","item":"男單","w":[{"nm":"劉杰禹","u":"北市長春國小","aw":"冠軍"},{"nm":"林宥樂","u":"北市長春國小","aw":"亞軍"},{"nm":"凃皓","u":"日新國小","aw":"並列季軍"},{"nm":"林楚為","u":"林口國小","aw":"並列季軍"},{"nm":"林楷叡","u":"高飛羽訓","aw":"第 5～8 名"},{"nm":"黃晨瑞","u":"台北市民生國小","aw":"第 5～8 名"},{"nm":"楊博勛","u":"高飛羽訓","aw":"第 5～8 名"},{"nm":"鍾鼎烽","u":"翊起爭烽","aw":"第 5～8 名"}]},{"div":"國小高年級","item":"女單","w":[{"nm":"許芮晞","u":"中原國小","aw":"冠軍"},{"nm":"陳芷安","u":"念慈安","aw":"亞軍"},{"nm":"郭桐菲","u":"濱江國小","aw":"並列季軍"},{"nm":"許品晨","u":"錦興國小","aw":"並列季軍"},{"nm":"林莞兒","u":"林口國小","aw":"第 5～8 名"},{"nm":"楊雅琁","u":"台北市民生國小","aw":"第 5～8 名"},{"nm":"張禾蓁","u":"楊梅國小","aw":"第 5～8 名"},{"nm":"楊函毓","u":"北市民權國小","aw":"第 5～8 名"}]},{"div":"國小高年級","item":"男雙","w":[{"nm":"呂紹榤 / 林定宇","u":"桃市錦興","aw":"冠軍"},{"nm":"林宥樂 / 劉杰禹","u":"北市長春國小","aw":"亞軍"},{"nm":"談沐嘉 / 馮瑞恩","u":"Tan&Tank","aw":"並列季軍"},{"nm":"吳亞信 / 尚祖銘","u":"台北市民生國小","aw":"並列季軍"}]},{"div":"國小高年級","item":"女雙","w":[{"nm":"郭桐菲 / 施采余","u":"濱江國小 & 竹南國小","aw":"冠軍"},{"nm":"林筱軒 / 江妍蓁","u":"北市長春國小","aw":"亞軍"},{"nm":"許品晨 / 許芮晞","u":"黑白甜心","aw":"並列季軍"},{"nm":"王悅嘉 / 洪苡庭","u":"林口國小","aw":"並列季軍"}]},{"div":"國中組","item":"男單","w":[{"nm":"張元愷","u":"合庫北市中山國中","aw":"冠軍"},{"nm":"林雋筌","u":"林口國中","aw":"亞軍"},{"nm":"蔡承庭","u":"","aw":"並列季軍"},{"nm":"邱子齊","u":"Z.羽道場","aw":"並列季軍"},{"nm":"許奕翔","u":"林口國中","aw":"第 5～8 名"},{"nm":"林楷叡","u":"高飛羽訓","aw":"第 5～8 名"},{"nm":"戴仁翔","u":"北市介壽","aw":"第 5～8 名"},{"nm":"彭丞瑒","u":"龍潭國中","aw":"第 5～8 名"}]},{"div":"國中組","item":"女單","w":[{"nm":"林楒琀","u":"江翠國中","aw":"冠軍"},{"nm":"陳芷安","u":"念慈安","aw":"亞軍"},{"nm":"余億湘","u":"振聲中學","aw":"季軍"},{"nm":"施宣羽","u":"小羽愛打羽球","aw":"殿軍"}]},{"div":"國中組","item":"男雙","w":[{"nm":"林宥承 / 邱繼樂","u":"亞柏江翠國中 &新北安溪","aw":"冠軍"},{"nm":"鄭旭桐 / 吳晨恩","u":"新北頭前國中","aw":"亞軍"},{"nm":"馬翊恩 / 史幼維","u":"合庫北市中山","aw":"並列季軍"},{"nm":"張語恩 / 羅聖喆","u":"開心羽球","aw":"並列季軍"}]},{"div":"國中組","item":"女雙","w":[{"nm":"曾奕瑄 / 萬致晴","u":"林口國中","aw":"冠軍"},{"nm":"張馨恬 / 汪子淇","u":"亞柏江翠國中","aw":"亞軍"},{"nm":"林楒琀 / 林昀臻","u":"亞柏江翠國中","aw":"季軍"},{"nm":"洪品甯 / 曹苡柔","u":"林口國中","aw":"殿軍"}]},{"div":"大專組","item":"男單","w":[{"nm":"鄭之鈞","u":"嘉義大學","aw":"冠軍"},{"nm":"費彥瑋","u":"森 快羽黑武士羽球隊","aw":"亞軍"},{"nm":"孫和謙","u":"森 快羽黑武士羽球隊","aw":"並列季軍"},{"nm":"黃柄翰","u":"龍華科技大學","aw":"並列季軍"}]},{"div":"大專組","item":"男雙","w":[{"nm":"劉峻豪 / 費彥瑋","u":"森 快羽黑武士羽球隊","aw":"冠軍"},{"nm":"李振瑋 / 羅山喻","u":"明新科大","aw":"亞軍"}]},{"div":"大專組","item":"女雙","w":[{"nm":"王蘊晴 / 林曦","u":"鳳逵俱樂部","aw":"冠軍"},{"nm":"李又寧 / 張詠晴","u":"輔仁大學","aw":"亞軍"}]},{"div":"大專組","item":"混雙","w":[{"nm":"何彥腧 / 楊謙君","u":"達棋北科大","aw":"冠軍"},{"nm":"李振瑋 / 林妍㚬","u":"達棋羽球","aw":"亞軍"}]},{"div":"社會青年組","item":"男雙","w":[{"nm":"李皓維 / 陳文宜","u":"","aw":"冠軍"},{"nm":"胡玟翰 / 謝世騰","u":"跳起來平抽","aw":"亞軍"},{"nm":"黃祐淳 / 唐耀祖","u":"達棋羽球","aw":"並列季軍"},{"nm":"高大可 / 李凡邑","u":"都行","aw":"並列季軍"}]},{"div":"社會青年組","item":"女雙","w":[{"nm":"曾奕瑄 / 萬致晴","u":"林口國中","aw":"冠軍"},{"nm":"張詒婷 / 陳品穎","u":"辣個女子","aw":"亞軍"}]},{"div":"社會青年組","item":"混雙","w":[{"nm":"李易秦 / 林昱凱","u":"森 快羽黑武士羽球隊","aw":"冠軍"},{"nm":"林曦 / 林彥均","u":"東湖天花板","aw":"亞軍"},{"nm":"蔡文 / 余又仁","u":"羽人碼頭","aw":"並列季軍"},{"nm":"古家芸 / 唐耀祖","u":"森 快羽黑武士羽球隊","aw":"並列季軍"}]},{"div":"社會青年團體組","item":"三點雙打","w":[{"nm":"簡辰書、林柏鋐、謝宗佑、許傑祐、林湘芸、蔡佩芩、林彥均","u":"弘淇運動","aw":"冠軍"},{"nm":"謝宗霖、張詒婷、陳品穎、李皓維、吳秉儒、陳文宜、徐嘉","u":"辣個男子加辣個女子的辣個團體","aw":"亞軍"},{"nm":"胡開雲、楊凱翔、李又寧、吳冠霖、周承諭、高大可、林曦","u":"東湖天花板","aw":"並列季軍"},{"nm":"古家芸、古家韋、李易秦、陳光泓、許晉榮、黃祐淳、唐耀祖","u":"森 快羽黑武士 x達棋羽球","aw":"並列季軍"}]},{"div":"社會青壯年組","item":"男雙","w":[{"nm":"侯以修 / 林存甫","u":"金白藍","aw":"冠軍"},{"nm":"石家榕 / 蔡政羽","u":"高飛羽訓","aw":"亞軍"},{"nm":"陳威利 / 王偉翰","u":"勢必得","aw":"並列季軍"},{"nm":"陳勁豪 / 劉宴翔","u":"好久沒打球","aw":"並列季軍"}]},{"div":"社會青壯年組","item":"女雙","w":[{"nm":"陳伊瑄 / 黃雨柔","u":"森 快羽黑武士羽球隊","aw":"冠軍"},{"nm":"王蕾雅 / 張芸甄","u":"芳菲斯美學","aw":"亞軍"}]},{"div":"社會青壯年組","item":"混雙","w":[{"nm":"林存甫 / 林芸","u":"金白藍","aw":"冠軍"},{"nm":"林浚彰 / 陳柔安","u":"森 快羽黑武士羽球隊","aw":"亞軍"},{"nm":"陳庭緯 / 胡靜玟","u":"混到最後一刻","aw":"並列季軍"},{"nm":"范承翰 / 黃雨柔","u":"森 快羽黑武士羽球隊","aw":"並列季軍"}]},{"div":"社會青壯團體組","item":"三點雙打","w":[{"nm":"蔡秉諺、范承翰、蔡承原、陳威利、張雅棋、黃雨柔、許瑜軒","u":"森 快羽黑武士 xAurastro","aw":"冠軍"},{"nm":"盧冠廷、余函恩、許凱傑、李懿軒、林佳萱、関雅萍、林雅婷","u":"我既優雅又充滿良心","aw":"亞軍"},{"nm":"紀哲維、李忠宥、李貞儀、邱惠琪、許智凱、張鎧麟、黃上豪","u":"六根蘿蔔","aw":"並列季軍"},{"nm":"張振琦、郭逸緯、何宗昇、林亭汶、王崇旭、林躍宸、黃立因","u":"快羽會館","aw":"並列季軍"}]},{"div":"壯年組","item":"男雙","w":[{"nm":"曾威翔 / 陳信宏","u":"芳菲斯美學","aw":"冠軍"},{"nm":"簡立豐 / 呂學彥","u":"名家羽球","aw":"亞軍"}]},{"div":"壯年組","item":"女雙","w":[{"nm":"許維茜 / 陳怜佑","u":"連一拉一","aw":"冠軍"}]},{"div":"壯年組","item":"混雙","w":[{"nm":"陳信宏 / 林佳慧","u":"芳菲斯美學","aw":"冠軍"},{"nm":"龔盈樺 / 曾威翔","u":"芳菲斯美學","aw":"亞軍"}]},{"div":"壯年團體組","item":"三點雙打","w":[{"nm":"陳伊瑄、李幸雯、曾冠一、李智聖、廖軒磒、沈伶鎂、陳軍仰","u":"森 快羽黑武士 x森利人集團","aw":"冠軍"},{"nm":"曾威翔、葉俊年、溫叔恒、王蕾雅、邱柏罡、陳信宏、林佳慧","u":"芳菲斯美學","aw":"亞軍"}]},{"div":"競技青年專業組","item":"男單","w":[{"nm":"林聖祐","u":"森 快羽黑武士羽球隊","aw":"冠軍"},{"nm":"萬豐誠","u":"老頭擺","aw":"亞軍"},{"nm":"陳明佳","u":"","aw":"季軍"},{"nm":"林奕辰","u":"森 快羽黑武士羽球隊","aw":"殿軍"}]},{"div":"競技青年專業組","item":"男雙","w":[{"nm":"曾聖安 / 廖廷杰","u":"（無）","aw":"冠軍"},{"nm":"徐以倫 / 梁峻評","u":"森 快羽黑武士羽球隊","aw":"亞軍"},{"nm":"蘇柏瑋 / 許晉海","u":"羽球醫師 x 羽研所","aw":"季軍"},{"nm":"吳宗擇 / 黃晟愷","u":"ANGEL滴加/城林橋下要飯","aw":"殿軍"}]},{"div":"競技青年專業組","item":"女雙","w":[{"nm":"彭莉庭 / 曾鈺婷","u":"森 快羽黑武士羽球隊","aw":"冠軍"},{"nm":"蘇湘玲 / 陳思綺","u":"羽人碼頭","aw":"亞軍"},{"nm":"莊紫紝 / 紀芊安","u":"森 快羽黑武士羽球隊","aw":"季軍"},{"nm":"陳羿妌 / 廖沛靜","u":"李寧寰羽體育","aw":"殿軍"}]},{"div":"競技青年專業組","item":"混雙","w":[{"nm":"莊紫紝 / 陳雨杉","u":"森 快羽黑武士羽球隊","aw":"冠軍"},{"nm":"黃俊皓 / 溫晧昀","u":"李寧羽耀黑武士","aw":"亞軍"},{"nm":"彭莉庭 / 徐以倫","u":"森 快羽黑武士羽球隊","aw":"並列季軍"},{"nm":"葉鈞彰 / 楊穎琦","u":"","aw":"並列季軍"}]},{"div":"競技青壯年專業組","item":"男雙","w":[{"nm":"高偉哲 / 徐毓傑","u":"無限羽球","aw":"冠軍"},{"nm":"廖冠皓 / 葉塏岳","u":"艾樂斯特","aw":"亞軍"}]},{"div":"競技青壯年專業組","item":"混雙","w":[{"nm":"杜家慧 / 廖冠皓","u":"森 快羽黑武士羽球隊","aw":"冠軍"},{"nm":"張育甄 / 陳志瑋","u":"9¾羽球月台","aw":"亞軍"},{"nm":"李宗原 / 陳婷儀","u":"李寧 黑武士羽球隊","aw":"季軍"},{"nm":"陳晴芬 / 杜杰陽","u":"森 快羽黑武士羽球隊","aw":"殿軍"}]},{"div":"競技專業團體組","item":"三點雙打","w":[{"nm":"許晉海、莊紫紝、林芷怡、莊宇傑、陳雨杉、蘇柏瑋、陳晴芬","u":"森 快羽黑武士 x羽研所","aw":"冠軍"},{"nm":"黃宇頡、彭莉庭、梁峻評、廖冠皓、溫晧昀、周書羽、陳冠朋","u":"森 快羽黑武士羽球隊","aw":"亞軍"},{"nm":"林聖祐、曾聖安、賴建良、杜家慧、周恩妃、高姿筠、李振瑋","u":"森 快羽黑武士 x達棋羽球","aw":"季軍"},{"nm":"徐毓傑、吳宗擇、邱志奇、鍾松翰、楊穎琦、葉瀞雅","u":"無限匹克球戰隊","aw":"殿軍"}]},{"div":"3v3熱血組","item":"3v3熱血","w":[{"nm":"黃宇頡 / 尤茹逸 / 張肇恩","u":"Bad 民頓","aw":"冠軍"},{"nm":"李振瑋 / 杜家慧 / 曾聖安","u":"達棋羽球","aw":"亞軍"},{"nm":"楊博智 / 楊博傑 / 簡呈芸","u":"讓你贏啦","aw":"並列季軍"},{"nm":"彭莉庭 / 杜鎮宇 / 張紡琦","u":"快加入黑武士匹克球隊","aw":"並列季軍"}]},{"div":"社會組女雙","item":"巔峰對決","w":[{"nm":"曾奕瑄 / 萬致晴","u":"林口國中","aw":"冠軍"},{"nm":"陳伊瑄 / 黃雨柔","u":"森 快羽黑武士羽球隊","aw":"亞軍"}]}]</script>
+<script id="spirit" type="application/json">[["臺北市中山區長春國民小學",63,18,1,3,0,0],["林口國中",52,12,2,1,0,0],["江翠國中",51,6,2,1,1,0],["臺北市松山區民生國民小學",47,37,0,0,2,0],["桃園市蘆竹區錦興國民小學",31,6,1,0,2,0],["新北市林口區麗林國民小學",28,8,1,0,1,0],["新北昌平國小/假組軍團",26,16,0,0,2,0],["合庫北市中山國中",23,3,1,0,1,0],["新北市板橋區文德國民小學",23,8,1,0,0,0],["濱江國小",22,2,1,0,1,0]]</script>
+<script>
+const AW=JSON.parse(document.getElementById('awards').textContent);
+const SP=JSON.parse(document.getElementById('spirit').textContent);
+const E=(s)=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const RK={'冠軍':1,'亞軍':2,'季軍':3,'並列季軍':3,'殿軍':4,'第 5～8 名':5};
+const MD={1:'金',2:'銀',3:'銅',4:'殿',5:'5-8'};
+const DIVS=[...new Set(AW.map(e=>e.div))];
+let total=0; AW.forEach(e=>total+=e.w.length);
+
+document.getElementById('hdsub').innerHTML=
+ '賽事期間 <b>2026.10.09 － 10.11</b>　‧　共 <b>'+AW.length+'</b> 個項目產生名次　‧　<b>'+total+'</b> 筆得獎紀錄<br>'+
+ '榮譽榜依大會公布之得獎名單製作；精神總錦標依各校報名人數與得名積分計算。';
+
+const fd=document.getElementById('fdiv');
+DIVS.forEach(d=>{const o=document.createElement('option');o.value=d;o.textContent=d;fd.appendChild(o);});
+
+function evid(e){return 'ev-'+DIVS.indexOf(e.div)+'-'+encodeURIComponent(e.item).replace(/%/g,'');}
+
+function wrow(w){
+  const r=RK[w.aw]||5;
+  const multi=/[、]/.test(w.nm)||w.nm.split(' / ').length>2;
+  return '<div class="wn">'+
+    '<div class="md m'+r+'">'+MD[r]+'</div>'+
+    '<div class="wt">'+
+      '<div class="wnm'+(multi?' sm':'')+'">'+E(w.nm)+'</div>'+
+      (w.u? '<div class="wu">'+E(w.u)+'</div>' : '<div class="wu none">未填寫所屬團體</div>')+
+      (r>=3? '<div class="wa">'+E(w.aw)+'</div>':'')+
+    '</div></div>';
+}
+
+function honor(hlDiv,hlEv){
+  let h='';
+  let cur=null;
+  DIVS.forEach(d=>{
+    if(hlDiv&&d!==hlDiv) return;
+    const evs=AW.filter(e=>e.div===d);
+    const cnt=evs.reduce((a,e)=>a+e.w.length,0);
+    h+='<section id="div-'+DIVS.indexOf(d)+'"><div class="sechd">'+
+       '<div><div class="eyebrow">DIVISION</div><h2 class="serif">'+E(d)+'</h2></div>'+
+       '<div class="meta">'+evs.length+' 個項目　‧　'+cnt+' 筆得獎紀錄</div></div><div class="grid">';
+    evs.forEach(e=>{
+      h+='<div class="card'+(hlEv===evid(e)?' hl':'')+'" id="'+evid(e)+'">'+
+         '<div class="ch"><div class="cd">'+E(e.div)+'</div><div class="ci serif">'+E(e.item)+'</div></div>'+
+         e.w.map(wrow).join('')+'</div>';
+    });
+    h+='</div></section>';
+  });
+  return h;
+}
+
+function spirit(){
+  const win=SP.slice(0,2);
+  let h='<section><div class="sechd"><div><div class="eyebrow">SPIRIT TROPHY</div>'+
+    '<h2 class="serif">🏆 精神總錦標</h2></div>'+
+    '<div class="meta">本屆精神總錦標取前兩名　‧　積分榜列出前 '+SP.length+' 名</div></div>';
+  h+='<div class="podium two">'+win.map((r,i)=>
+    '<div class="pd pd'+(i+1)+'"><span class="rk serif">第 '+(i+1)+' 名</span>'+
+    '<div class="sch serif">'+E(r[0])+'</div>'+
+    '<div class="pts serif">'+r[1]+'</div><div class="ptl">總積分</div>'+
+    '<div class="brk">初始積分 '+r[2]+
+      (r[3]?'　‧　冠軍 '+r[3]:'')+(r[4]?'　‧　亞軍 '+r[4]:'')+
+      (r[5]?'　‧　季軍 '+r[5]:'')+(r[6]?'　‧　殿軍 '+r[6]:'')+'</div></div>').join('')+'</div>';
+  h+='<h3 class="tblh serif">積分榜</h3><div class="tblnote">以下為各校積分排名，前兩名獲頒本屆精神總錦標。</div>'+
+     '<div class="tbl"><table><thead><tr><th></th><th>學校名稱</th><th>總積分</th><th>初始積分</th>'+
+     '<th>第一名總數 (15分)</th><th>第二名總數 (10分)</th><th>第三名總數 (5分)</th><th>第四名總數 (3分)</th></tr></thead><tbody>'+
+     SP.map((r,i)=>'<tr'+(i<2?' class="win"':'')+'><td>'+(i+1)+'.</td>'+
+       '<td>'+E(r[0])+(i<2?'<span class="wtag">精神總錦標</span>':'')+'</td>'+
+       '<td class="tp">'+r[1]+'</td><td>'+r[2]+'</td>'+
+       r.slice(3).map(v=>'<td'+(v?'':' class="z"')+'>'+v+'</td>').join('')+'</tr>').join('')+
+     '</tbody></table></div>';
+  h+='<div class="rules"><h3 class="serif">🔔 精神總錦標積分計算方法</h3><ol>'+
+     '<li><b>初始積分</b>：該學校報名人數 +1 分（依照學校報名人頭數取分，不關報名項目）。'+
+     '<span class="eg">例如：武士學校，A 學生報名單雙打，總積分也只有加 1 分。</span></li>'+
+     '<li><b>得名積分</b>：<span class="pill p1">冠軍 +15</span><span class="pill p2">亞軍 +10</span>'+
+     '<span class="pill p3">季軍 +5</span><span class="pill p4">殿軍 +3</span>'+
+     '如雙打是不同學校組隊報名並得獎，則雙學校各得分。'+
+     '<span class="eg">例如：黑武配白武得冠軍，黑武、白武學校各得 15 分。</span></li></ol></div>';
+  h+='<div class="notice" style="margin-top:26px"><h3>📣 注意事項</h3>'+
+     '<p>1. 本屆共 94 所學校參與計分，<span class="em">精神總錦標僅取前兩名</span>；上方積分榜列出積分前 '+SP.length+' 名供各校參考，名次依大會系統公布之積分結果。</p>'+
+     '<p>2. 雙打若由不同學校組隊報名並得獎，兩校各自計分。</p>'+
+     '<p>3. 精神總錦標如有任何問題，請至報到處尋高偉哲／杜鎮宇洽詢。</p></div>';
+  h+='</section>';
+  return h;
+}
+
+function search(){
+  const kw=document.getElementById('q').value.trim();
+  const box=document.getElementById('hits');
+  if(!kw||document.getElementById('view').value!=='honor'){box.innerHTML='';return [];}
+  const k=kw.toLowerCase();
+  const out=[];
+  AW.forEach(e=>e.w.forEach(w=>{
+    if((w.nm+' '+w.u).toLowerCase().includes(k)) out.push({e:e,w:w});
+  }));
+  if(!out.length){box.innerHTML='<div class="hits"><h4>查詢結果</h4><div class="hit"><span class="where">查無「'+E(kw)+'」的得獎紀錄。</span></div></div>';return [];}
+  box.innerHTML='<div class="hits"><h4>查詢結果　'+out.length+' 筆</h4>'+out.slice(0,40).map(o=>
+    '<div class="hit"><span class="who">'+E(o.w.nm)+'</span>'+
+    '<span class="where">'+E(o.e.div)+'　'+E(o.e.item)+'　'+E(o.w.aw)+(o.w.u?'　‧　'+E(o.w.u):'')+'</span>'+
+    '<button class="go" data-t="'+evid(o.e)+'">看項目</button></div>').join('')+
+    (out.length>40?'<div class="hit"><span class="where">（僅顯示前 40 筆，請縮小查詢範圍）</span></div>':'')+'</div>';
+  box.querySelectorAll('.go').forEach(b=>b.onclick=()=>{
+    document.getElementById('fdiv').value='';
+    render(b.dataset.t);
+    const el=document.getElementById(b.dataset.t);
+    if(el) el.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  return out;
+}
+
+function render(hlEv){
+  const v=document.getElementById('view').value;
+  const d=document.getElementById('fdiv').value;
+  document.getElementById('fdiv').style.display = v==='honor'?'':'none';
+  document.getElementById('q').style.display = v==='honor'?'':'none';
+  if(v==='spirit'){
+    document.getElementById('body').innerHTML=spirit();
+    document.getElementById('cnt').textContent='精神總錦標　前 '+SP.length+' 名';
+    document.getElementById('hits').innerHTML='';
+  }else{
+    document.getElementById('body').innerHTML=honor(d,hlEv);
+    const evs=d?AW.filter(e=>e.div===d):AW;
+    const n=evs.reduce((a,e)=>a+e.w.length,0);
+    document.getElementById('cnt').textContent=evs.length+' 個項目　‧　'+n+' 筆得獎紀錄';
+  }
+  document.getElementById('foot').innerHTML=
+    '2026 第二屆武士盃全國羽球錦標賽　榮譽榜＋精神總錦標<br>'+
+    '得獎名單依大會公布之得獎名單（2026/10/13）製作；並列季軍表示該項目未進行季軍戰，準決賽落敗兩隊同列第三。<br>'+
+    '未產生獎項的項目：社會組男雙 巔峰對決。如名次有疑義，請至報到處與大會聯繫。';
+}
+
+document.getElementById('view').onchange=()=>{render();window.scrollTo({top:0,behavior:'smooth'});};
+document.getElementById('fdiv').onchange=()=>render();
+document.getElementById('q').oninput=search;
+render();
+</script>
+</body>
+</html>
